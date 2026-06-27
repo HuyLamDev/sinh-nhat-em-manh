@@ -1,3 +1,5 @@
+import { publicAsset } from "./assets";
+
 export type MemoryPolaroid = {
   src: string;
   alt: string;
@@ -13,19 +15,19 @@ export const memoryBoard = {
   ],
   polaroids: [
     {
-      src: "/polaroids/anh.jpg",
+      src: publicAsset("polaroids/anh.jpg"),
       alt: "Polaroid của anh",
       caption: "anh",
       className: "memory-polaroid--first",
     },
     {
-      src: "/polaroids/iu.jpg",
+      src: publicAsset("polaroids/iu.jpg"),
       alt: "Polaroid yêu thương",
       caption: "iu",
       className: "memory-polaroid--second",
     },
     {
-      src: "/polaroids/em-manh.jpg",
+      src: publicAsset("polaroids/em-manh.jpg"),
       alt: "Polaroid của em Manh",
       caption: "em Manh",
       className: "memory-polaroid--third",
