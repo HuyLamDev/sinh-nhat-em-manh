@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+.DS_Store
+
+# Local planning/design docs
+.docs/
+docs/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
