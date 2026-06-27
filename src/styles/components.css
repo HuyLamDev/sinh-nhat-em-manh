@@ -347,14 +347,17 @@
 }
 
 .progress-slider::-webkit-slider-thumb {
-  width: 18px;
-  height: 18px;
-  margin-top: -5px;
+  width: 30px;
+  height: 30px;
+  margin-top: -11px;
   appearance: none;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  background: var(--color-accent-pearl);
-  box-shadow: 0 8px 18px rgba(0, 52, 85, 0.18);
+  border: 0;
+  background-image: url("/sinh-nhat-em-manh/icons/crab.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(0 6px 8px rgba(0, 52, 85, 0.24))
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.72));
 }
 
 .progress-slider::-moz-range-track {
@@ -370,12 +373,16 @@
 }
 
 .progress-slider::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  background: var(--color-accent-pearl);
-  box-shadow: 0 8px 18px rgba(0, 52, 85, 0.18);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("/sinh-nhat-em-manh/icons/crab.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(0 6px 8px rgba(0, 52, 85, 0.24))
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.72));
 }
 
 .track-times {
