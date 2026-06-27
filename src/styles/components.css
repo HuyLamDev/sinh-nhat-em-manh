@@ -778,14 +778,53 @@
     grid-template-columns: 1fr;
   }
 
+  .music-player {
+    padding: var(--space-5);
+  }
+
   .track-summary {
-    align-items: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .track-summary > div {
+    min-width: 0;
   }
 
   .track-art {
-    width: 100%;
-    max-width: 180px;
+    flex-basis: auto;
+    width: 88px;
+    height: 88px;
+    max-width: none;
+    border-radius: var(--radius-photo);
+  }
+
+  .track-title {
+    overflow: hidden;
+    font-size: 1.55rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .track-kicker,
+  .track-artist {
+    font-size: 0.95rem;
+  }
+
+  .track-artist {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .progress-control {
+    margin: var(--space-5) 0 var(--space-3);
+  }
+
+  .track-times {
+    margin-bottom: var(--space-4);
   }
 
   .song-list {
@@ -794,17 +833,33 @@
 
   .player-footer {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   .player-controls {
+    grid-column: auto;
+    grid-row: 1;
     justify-content: center;
+    gap: var(--space-4);
+  }
+
+  .control-button {
+    width: 46px;
+    height: 46px;
+  }
+
+  .control-button--primary {
+    width: 64px;
+    height: 64px;
   }
 
   .volume-control {
     grid-column: auto;
+    grid-row: 2;
     grid-template-columns: auto minmax(0, 1fr);
     justify-self: stretch;
     width: 100%;
+    padding: var(--space-3) var(--space-4);
   }
 
   .lyric-line {
